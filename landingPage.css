@@ -1,0 +1,21 @@
+.landing-page-container {
+    display: flex;
+    flex-direction: column;
+    background-image: url("Images/LandingPage/Landing-page-image.png");
+    background-color: #373737;
+    background-repeat: no-repeat;
+    height: 100vh;
+    /* background-attachment: fixed; */
+    /* background-position: center; */
+    background-position-x: 40%;
+    background-position-y: 65%;
+    background-size: 290% auto; 
+}
+
+@media only screen and (min-width: 750px) {
+    .landing-page-container {
+        background-position-x: 20%;
+        background-position-y: 65%;
+        background-size: 130% auto;
+    }
+}

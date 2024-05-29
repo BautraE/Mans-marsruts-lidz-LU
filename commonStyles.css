@@ -1,0 +1,342 @@
+* {
+    margin: 0;
+}
+
+.page-content h1 {
+    color: white;
+    font-size: 28px;
+    font-family: Verdana;
+    font-weight: bold;
+    text-shadow: 0px 3px 10px black;
+}
+
+.page-content h2 {
+    color: white;
+    font-size: 20px;
+    font-family: Verdana;
+    font-weight: bold;
+    text-shadow: 0px 3px 10px black;
+}
+
+.page-content p {
+    color: white;
+    font-size: 14px;
+    font-family: Arial;
+    text-shadow: 0px 3px 10px black;
+}
+
+.page-content .under-image-text {
+    color: white;
+    font-size: 10px;
+    font-family: Arial;
+    font-style: italic;
+}
+
+.page-content > .button {
+    /* color: white;
+    font-size: 28px; */
+}
+
+/**
+* Navbar styles start
+*/
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2E2E2E;
+}
+
+.logo-navbar {
+    display: inline-block;
+    background-color: #F6BF00;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.logo-navbar-image {
+    text-align: center;
+}
+
+.mobile-menu-line {
+    width: 35px;
+    border: 3.5px solid white;
+    margin-bottom: 7px;
+}
+
+.link-text-navbar{
+    font-family: Verdana;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.mobile-menu-line:last-child {
+    margin-bottom: 0;
+}
+
+.links-navbar {
+    height: 300px; /*Specify a height */
+    width: 250px; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    right: 0;
+    background-color: #2E2E2E;
+    overflow-x: hidden; /* Disable horizontal scroll */
+
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.links-navbar {
+    display: none;
+}
+
+.close-menu-icon {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 38px;
+}
+
+.close-menu-icon {
+    display: none;
+}
+
+.theme-navbar {
+    background-color: #D9D9D9;
+    width: 150px;
+    height: 30px;
+    position: absolute;
+    right: 20px;
+}
+
+.theme-slider {
+    margin-left: auto; 
+    margin-right: 0;
+    background-color: #575757;
+    height: 100%;
+    width: 104.5px;
+    display: flex;
+    align-items: center;
+}
+
+.slider-text {
+    font-family: Verdana;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    font-size: 15px;
+    margin: auto;
+}
+/**
+* Navbar styles end
+*/
+
+/**
+* Footer styles start
+*/
+.footer {
+    display: block;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    background-color: #2E2E2E;
+}
+
+.info-footer {
+    margin-top: 35px;
+}
+
+.info-footer-title {
+    font-family: Verdana;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #F6BF00;
+    font-size: 12px;
+}
+
+.info-footer-content {
+    font-family: Arial;
+    color: white;
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.footer > div {
+    text-align: center;
+}
+/**
+* Footer styles end
+*/
+
+@media only screen and (min-width: 800px) {
+    /**
+    * Footer styles start
+    */
+    .footer {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: start;
+        padding-top: 60px;
+        padding-bottom: 70px;
+    }
+
+    .info-footer {
+        margin-top: 0;
+        margin-left: 120px;
+    }
+
+    .footer > div {
+        text-align: initial;
+    }
+    /**
+    * Footer styles end
+    */
+}
+
+@media only screen and (min-width: 880px) {
+    /**
+    * Navbar styles start
+    */
+    .mobile-menu {
+        display: none;
+    }
+
+    .links-navbar {
+        width: auto;
+        height: auto;
+        position: static; /* Stay in place */
+        z-index: auto; /* Stay on top */
+        top: auto;
+        right: auto;
+        background-color: none;
+        overflow-x: auto; /* Disable horizontal scroll */
+    
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .navbar {
+        justify-content: flex-start;
+        gap: 20px;
+    }
+    /**
+    * Navbar styles end
+    */
+}
+
+@media only screen and (min-width: 1050px) {
+    /**
+    * Footer styles start
+    */
+    .logo-footer {
+        width: 170px;
+    }
+
+    .info-footer-title {
+        font-size: 15px;
+    }
+
+    .info-footer-content {
+        font-size: 15px;
+    }
+    /**
+    * Footer styles end
+    */
+}
+
+@media only screen and (min-width: 1250px) {
+    .page-content h1 {
+        color: white;
+        font-size: 48px;
+        font-family: Verdana;
+        font-weight: bold;
+        text-shadow: 0px 3px 10px black;
+    }
+    
+    .page-content h2 {
+        color: white;
+        font-size: 30px;
+        font-family: Verdana;
+        font-weight: bold;
+        text-shadow: 0px 3px 10px black;
+    }
+    
+    .page-content p {
+        color: white;
+        font-size: 24px;
+        font-family: Arial;
+        text-shadow: 0px 3px 10px black;
+    }
+    
+    .page-content .under-image-text {
+        color: white;
+        font-size: 16px;
+        font-family: Arial;
+        font-style: italic;
+    }
+    
+    .page-content > .button {
+        /* color: white;
+        font-size: 28px; */
+    }
+    /**
+    * Footer styles start
+    */
+    .logo-footer {
+        width: 205px;
+    }
+
+    .info-footer-title {
+        font-size: 20px;
+    }
+
+    .info-footer-content {
+        font-size: 20px;
+    }
+    /**
+    * Footer styles end
+    */
+}
+
+@media only screen and (min-width: 1400px) {
+    /**
+    * Navbar styles start
+    */
+    .logo-navbar-image {
+        width:208px;
+        margin-left: 38px;
+        margin-right: 38px;
+    }
+
+    .link-text-navbar{
+        font-size: 24px;
+    }
+
+    .theme-navbar {
+        width: 215px;
+        height: 43px;
+        right: 70px;
+    }
+    
+    .theme-slider {
+        width: 150px;
+    }
+    
+    .slider-text {
+        font-size: 24px;
+    }
+    /**
+    * Navbar styles end
+    */
+}
