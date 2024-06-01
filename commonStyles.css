@@ -2,7 +2,15 @@
     margin: 0;
 }
 
-.page-content h1 {
+body {
+    min-width: 350px;
+}
+
+.page-content {
+    max-width: 100%;
+}
+
+.page-content .heading-1 {
     color: white;
     font-size: 28px;
     font-family: Verdana;
@@ -10,7 +18,7 @@
     text-shadow: 0px 3px 10px black;
 }
 
-.page-content h2 {
+.page-content .heading-2 {
     color: white;
     font-size: 20px;
     font-family: Verdana;
@@ -18,7 +26,7 @@
     text-shadow: 0px 3px 10px black;
 }
 
-.page-content p {
+.page-content .paragraph {
     color: white;
     font-size: 14px;
     font-family: Arial;
@@ -32,9 +40,31 @@
     font-style: italic;
 }
 
-.page-content > .button {
-    /* color: white;
-    font-size: 28px; */
+.page-content .button {
+    display: inline-block;
+    background-color: #FFE27B;
+    width: max-content;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-left: 53px;
+    padding-right: 53px;
+}
+
+.page-content .button:hover {
+    cursor: pointer;
+    background-color: #AD8700;
+}
+
+.page-content .button-text {
+    font-family: Arial;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.content-box-regular {
+    height: 100%;
+    width: 300px;
 }
 
 /**
@@ -75,6 +105,15 @@
     text-decoration: none;
 }
 
+.link-text-navbar:not(.current-page-navbar-link):hover {
+    color: #D9D9D9;
+    text-decoration: underline;
+}
+
+.current-page-navbar-link {
+    color: #B4B4B4;
+}
+
 .mobile-menu-line:last-child {
     margin-bottom: 0;
 }
@@ -92,13 +131,16 @@
     display:flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     text-align: center;
     gap: 20px;
 }
 
+/*  */
 .links-navbar {
     display: none;
 }
+/*  */
 
 .close-menu-icon {
     position: fixed;
@@ -115,8 +157,6 @@
     background-color: #D9D9D9;
     width: 150px;
     height: 30px;
-    position: absolute;
-    right: 20px;
 }
 
 .theme-slider {
@@ -230,6 +270,11 @@
         justify-content: flex-start;
         gap: 20px;
     }
+
+    .theme-navbar {
+        position: absolute;
+        right: 20px;
+    }
     /**
     * Navbar styles end
     */
@@ -255,41 +300,13 @@
     */
 }
 
+@media only screen and (min-width: 1150px) {
+    .content-box-regular {
+        width: 1080px;
+    }
+}
+
 @media only screen and (min-width: 1250px) {
-    .page-content h1 {
-        color: white;
-        font-size: 48px;
-        font-family: Verdana;
-        font-weight: bold;
-        text-shadow: 0px 3px 10px black;
-    }
-    
-    .page-content h2 {
-        color: white;
-        font-size: 30px;
-        font-family: Verdana;
-        font-weight: bold;
-        text-shadow: 0px 3px 10px black;
-    }
-    
-    .page-content p {
-        color: white;
-        font-size: 24px;
-        font-family: Arial;
-        text-shadow: 0px 3px 10px black;
-    }
-    
-    .page-content .under-image-text {
-        color: white;
-        font-size: 16px;
-        font-family: Arial;
-        font-style: italic;
-    }
-    
-    .page-content > .button {
-        /* color: white;
-        font-size: 28px; */
-    }
     /**
     * Footer styles start
     */
@@ -309,7 +326,48 @@
     */
 }
 
-@media only screen and (min-width: 1400px) {
+@media only screen and (min-width: 1550px) {
+    .page-content .heading-1 {
+        color: white;
+        font-size: 48px;
+        font-family: Verdana;
+        font-weight: bold;
+        text-shadow: 0px 3px 10px black;
+    }
+    
+    .page-content .heading-2 {
+        color: white;
+        font-size: 30px;
+        font-family: Verdana;
+        font-weight: bold;
+        text-shadow: 0px 3px 10px black;
+    }
+    
+    .page-content .paragraph {
+        color: white;
+        font-size: 24px;
+        font-family: Arial;
+        text-shadow: 0px 3px 10px black;
+    }
+    
+    .page-content .under-image-text {
+        color: white;
+        font-size: 16px;
+        font-family: Arial;
+        font-style: italic;
+    }
+    
+    .page-content .button {
+        padding-top: 11px;
+        padding-bottom: 11px;
+        padding-left: 68px;
+        padding-right:68px;
+    }
+
+    .page-content .button-text {
+        font-size: 24px;
+    }
+    
     /**
     * Navbar styles start
     */
