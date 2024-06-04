@@ -1,0 +1,125 @@
+.daily-travel-container {
+    background-color: #373737;
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.trains-container {
+    background-color: #535353;
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.stations-container {
+    background-color: #373737;
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.content-image {
+    display: none;
+}
+
+.image-container, .image-container-large {
+    width: 100%;
+    height: 325px;
+    overflow: hidden;
+    /* background-color: blue; */
+    background-color: #535353;
+    box-shadow: 0px 3px 10px -2px black;
+    margin-top: 20px;
+}
+
+.image {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover;
+}
+
+.heading-1 {
+    margin-bottom: 25px;
+}
+
+.paragraph {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.under-image-text {
+    margin-top: 10px;
+}
+
+@media only screen and (min-width: 1150px) {
+    .daily-travel-container {
+        padding-top: 90px;
+        padding-bottom: 90px;
+    }
+
+    .trains-container {
+        padding-top: 90px;
+        padding-bottom: 90px;
+    }
+    
+    .stations-container {
+        padding-top: 90px;
+        padding-bottom: 90px;
+    }
+    
+    .content-image {
+        display: block;
+    }
+
+    .image-between-text {
+        display: none;
+    }
+
+    .trains-container .content-box-regular, .stations-container .content-box-regular {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .trains-container .content-box-regular {
+        flex-direction: row;
+    }
+
+    .stations-container .content-box-regular {
+        flex-direction: row-reverse;
+    }
+
+    .content-text, .content-image {
+        width: 520px;
+    }
+
+    .image-container {
+        height: 570px;
+        margin-top: 0;
+    }
+
+    .image-container-large {
+        height: 550px;
+    }
+
+    .under-image-text {
+        margin-top: 15px;
+    }
+
+    .daily-travel-container .under-image-text {
+        text-align: right;
+    }
+    
+    .stations-container .under-image-text{
+        text-align: right;
+    }
+
+    .paragraph {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+}
