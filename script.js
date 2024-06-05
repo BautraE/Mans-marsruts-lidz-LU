@@ -11,10 +11,20 @@ function themeSwitch() {
     elements = document.querySelectorAll('p.slider-text');
     elements.forEach(function(element) {
         element.classList.toggle("light-mode-theme-switch-slider-text");
+        if (element.getAttribute('class').includes("light-mode-theme-switch-slider-text")) {
+            element.textContent = "Gaišs"
+        }
+        else {
+            element.textContent = "Tumšs"
+        }
     });
 
     // Selects text in page
     elements = document.querySelectorAll('p.paragraph, h1.heading-1, h2.heading-2, .under-image-text');
+    elements.forEach(function(element) {
+        element.classList.toggle("light-mode-text");
+    });
+    elements = document.querySelectorAll('.landing-page-container p.paragraph, .landing-page-container h1.heading-1');
     elements.forEach(function(element) {
         element.classList.toggle("light-mode-text");
     });
@@ -72,3 +82,26 @@ function mobileMenuToggle() {
 //         element.classList.toggle("mobile-menu-visibility");
 //     });
 // }
+
+// document.addEventListener('DOMContentLoaded', function() {
+//     const sections = document.querySelectorAll('.page-content > div');
+//     const lastSection = sections[sections.length - 1];
+    
+//     function adjustLastSectionPadding() {
+//       const viewportHeight = window.innerHeight;
+//       const documentHeight = document.body.scrollHeight;
+//     //   const documentHeight = 0;
+//       const lastSectionHeight = lastSection.scrollHeight;
+//       // const navBarHeight = 100; // Height of the sticky navbar
+//       const navBarHeight = 0; // Height of the sticky navbar
+  
+//       const remainingHeight = viewportHeight - (documentHeight - lastSection.offsetTop - lastSectionHeight + navBarHeight);
+  
+//       if (remainingHeight > 0) {
+//         lastSection.style.paddingBottom = `${remainingHeight}px`;
+//       }
+//     }
+  
+//     window.addEventListener('resize', adjustLastSectionPadding);
+//     adjustLastSectionPadding(); // Call once to set the padding on load
+//   });

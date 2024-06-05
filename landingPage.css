@@ -1,12 +1,22 @@
 .landing-page-container {
     display: flex;
     justify-content: center;
-    background-image: url("Images/LandingPage/Landing-page-image.png");
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    /* background-image: url("Images/LandingPage/Landing-page-image.png");
     background-color: #373737;
     background-repeat: no-repeat;
     background-position-x: 40%;
     background-position-y: 65%;
-    background-size: 290% auto; 
+    background-size: 290% auto;  */
+}
+
+.image {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover;
 }
 
 .content-box {
@@ -15,8 +25,10 @@
     justify-content: center;
     align-items: center;
     gap: 18px;
-    height: 100vh;
+    height: 100%;
     width: 300px;
+    position: absolute;
+    top: 0;
     /* background-attachment: fixed; */
     /* background-position: center; */
 }

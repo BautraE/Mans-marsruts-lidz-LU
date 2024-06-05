@@ -50,6 +50,10 @@
     color: white;
 }
 
+.paragraph-navigation-links:hover, .paragraph-navigation-links.active:hover{
+    color: #FFE27B;
+}
+
 .yellow-line {
     background-color: #F6BF00;
     margin-top: 13px;

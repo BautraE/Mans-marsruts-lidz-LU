@@ -4,6 +4,7 @@
 
 body {
     min-width: 350px;
+    background-color: #2E2E2E;
 }
 
 .page-content {
@@ -53,10 +54,16 @@ body {
     background-color: #FFE27B;
     width: 231px;
     height: 33px;
+    box-shadow: 0px 3px 10px -2px black;
+    transition: background-color 0.5s;
     /* padding-top: 9px;
     padding-bottom: 9px;
     padding-left: 53px;
     padding-right: 53px; */
+}
+
+.page-content .button-link {
+    text-decoration: none;
 }
 
 .page-content .button:hover {
@@ -69,6 +76,7 @@ body {
     font-size: 14px;
     font-weight: bold;
     text-transform: uppercase;
+    color: black;
 }
 
 .content-box-regular {
@@ -461,6 +469,15 @@ body {
 
 .page-content .light-mode-paragraph-navigation {
     color: #5A5A5A;
+}
+
+.page-content .light-mode-paragraph-navigation.active {
+    color: #000000;
+}
+
+.page-content .light-mode-paragraph-navigation.active:hover,
+.page-content .light-mode-paragraph-navigation:hover{
+    color: #AD8700;
 }
 
 .page-content .light-mode-station-link{
