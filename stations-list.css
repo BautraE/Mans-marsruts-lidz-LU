@@ -1,9 +1,14 @@
+.justTestingThis {
+    display: block;
+}
+
 .intro-container {
     background-color: #535353;
     display: flex;
     justify-content: center;
     padding-top: 40px;
     padding-bottom: 40px;
+    transition: background-color 1s;
 }
 
 .content-image {
@@ -35,7 +40,7 @@
     margin-bottom: 15px;
 }
 
-.under-image-text {
+.page-content .under-image-text {
     margin-top: 10px;
     text-align: right;
 }
@@ -47,6 +52,7 @@
     justify-content: center;
     padding-top: 40px;
     padding-bottom: 40px;
+    transition: background-color 1s;
 }
 
 .link-container {
@@ -54,6 +60,12 @@
     height:56px;
     width: 100%;
     position: relative;
+    transition: height 0.5s;
+}
+
+.link-container:hover {
+    height:66px;
+    box-shadow: 0px 15px 30px -2px black;
 }
 
 .link-image-container {
@@ -74,6 +86,7 @@
     color: white;
     font-weight: bold;
     text-transform: uppercase;
+    text-shadow: 0px 2px 5px rgba(0, 0, 0, 80%);
 }
 
 .station-name-container {
@@ -92,6 +105,7 @@
     width: 30px;
     height: 30px;
     background-color: #B4B4B4;
+    transition: background-color 1s;
 }
 
 .left-track {
@@ -104,6 +118,11 @@
 
 @media only screen and (min-width: 1150px) {
     .intro-container {
+        padding-top: 90px;
+        padding-bottom: 90px;
+    }
+
+    .station-list-container {
         padding-top: 90px;
         padding-bottom: 90px;
     }
@@ -146,6 +165,10 @@
         height:200px;
     }
 
+    .link-container:hover {
+        height:250px;
+    }
+
     .station-link-text {
         font-size: 80px;
     }
@@ -161,5 +184,9 @@
     
     .right-track {
         margin-right: 210px;
+    }
+
+    .heading-1 {
+        margin-bottom: 45px;
     }
 }

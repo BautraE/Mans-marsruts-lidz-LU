@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Welcome!</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../common-styles.css" type="text/css" rel="stylesheet">
+        <link href="../station-pages.css" type="text/css" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Navigation bar -->
+        <div class="navbar">
+            <div class="logo-navbar">
+                <img class="logo-navbar-image" src="../Images/logo-black.svg" alt="Vārds Uzvārds">
+            </div>
+            <div class="mobile-menu" onClick="mobileMenuToggle()">
+                <hr class="mobile-menu-line">
+                <hr class="mobile-menu-line">
+                <hr class="mobile-menu-line">
+            </div>
+            <div class="links-navbar">
+                <img class="close-menu-icon" src="../Images/close-menu-icon.svg" onClick="mobileMenuToggle()" alt="x">
+                <a class="link-text-navbar" href="../index.html">Sākums</a>
+                <a class="link-text-navbar" href="../daily-travel.html">Ikdienas Ceļš</a>
+                <a class="link-text-navbar" href="../trains.html">Vilcieni</a>
+                <a class="link-text-navbar" href="../stations-list.html">Pieturvietas</a>
+                <div class="theme-navbar" onClick="themeSwitch()">
+                    <div class="theme-slider">
+                        <p class="slider-text">Tumšs</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Page content -->
+        <div class="page-content">
+            <div class="station-container darker-bg">
+                <div class="content-box-regular">
+                    <div class="station-link-container">
+                        <a class="station-link" href="">← Iepriekšējā pietura</a>
+                        <a class="station-link" href="">Nākamā pietura →</a>
+                    </div>
+                    <div class="extra-container-wrapper">
+                        <div class="content-text">
+                            <h1 class="heading-1">Tukums i</h1>
+                            <div class="image-between-text">
+                                <div class="image-container">
+                                    <img class="image" src="therewillbeimagehere" alt="">
+                                </div>
+                                <p class="under-image-text">!!!Attela paraksts</p>
+                            </div>
+                            <p class="paragraph">Mana iekāpšanas stacija, dodoties Rīgas virzienā. Šī ir vieta, kur esmu sagaidījis visus vilcienus, ar kuriem esmu devies uz universitāti. Šeit es izjūtu gan prieku, dodoties uz pēdējo lekciju semestrī, saņemot diplomu, vai vienkārši satiekot kursa biedrus, gan nogurumu, ceļoties piecos no rīta, gan uztraukumu pirms katra lielā pārbaudījuma.</p>
+                            <p class="paragraph">Šeit es arī mēdzu satikt pazīstamas sejas, kuras šobrīd bieži nesastopu atšķirīgo dzīves ceļu dēļ, proti, turpmāko gaitu izvēlē pēc pamatskolas un vidusskolas.</p>
+                        </div>
+                        <div class="content-image">
+                            <div class="image-container">
+                                <img class="image" src="therewillbeimagehere" alt="">
+                            </div>
+                            <p class="under-image-text">!!!Attela paraksts</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-container lighter-bg">
+                <div class="content-box-regular">
+                    <h1 class="heading-1">Citi attēli</h1>
+                    <div class="image-collection-container">
+                        <div class="large-image-container">
+                            <img class="image" src="" alt="">
+                        </div>
+                        <div class="small-images-collection">
+                            <div class="small-image-container">
+                                <img class="image" src="" alt="">
+                            </div>
+                            <div class="small-image-container-extra-images">
+                                <img class="image" src="" alt="">
+                                <div class="additional-image-count-container" onClick="showModal(2)">
+                                    <p class="additional-image-count"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="under-image-text">Plašāks ieskats stacijas atmosfērā</p>
+                </div>
+            </div>
+        </div>
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <div class="modal-image-container">
+                <img class="modal-content" id="img01">
+            </div>
+            <div class="counter" id="counter"></div>
+            <a class="prev">&#10094;</a>
+            <a class="next">&#10095;</a>
+        </div>
+        <!-- Footer -->
+        <div class="footer">
+            <div>
+                <img class="logo-footer" src="../Images/logo-white.svg" alt="Vārds Uzvārds">
+            </div>
+            <div class="info-footer">
+                <p class="info-footer-title">
+                    Autora informācija:
+                </p>
+                <p class="info-footer-content">
+                    VĀRDS: Edgars
+                </p>
+                <p class="info-footer-content">
+                    UZVĀRDS: Bautra
+                </p>
+                <p class="info-footer-content">
+                    ST. APL. NR.: eb21122
+                </p>
+            </div>
+            <div class="info-footer">
+                <p class="info-footer-title">
+                    Kontaktinformācija:
+                </p>
+                <p class="info-footer-content">
+                    EPASTS: edgars.bautra12@gmail.com
+                </p>
+            </div>
+        </div>
+        <!-- JS script file for functionality -->
+        <script src="../script.js"></script>
+        <script src="images-tukums-i.js"></script>
+        <script src="display-images.js"></script>
+    </body>
+</html>

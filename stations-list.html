@@ -3,27 +3,27 @@
     <head>
         <title>Welcome!</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="commonStyles.css" type="text/css" rel="stylesheet">
+        <link href="common-styles.css" type="text/css" rel="stylesheet">
         <link href="stations-list.css" type="text/css" rel="stylesheet">
     </head>
     <body>
         <!-- Navigation bar -->
         <div class="navbar">
             <div class="logo-navbar">
-                <img class="logo-navbar-image" src="Images/logo-black.svg" alt="">
+                <img class="logo-navbar-image" src="Images/logo-black.svg" alt="Vārds Uzvārds">
             </div>
-            <div class="mobile-menu">
+            <div class="mobile-menu" onClick="mobileMenuToggle()">
                 <hr class="mobile-menu-line">
                 <hr class="mobile-menu-line">
                 <hr class="mobile-menu-line">
             </div>
             <div class="links-navbar">
-                <img class="close-menu-icon" src="Images/close-menu-icon.svg" alt="">
+                <img class="close-menu-icon" src="Images/close-menu-icon.svg" onClick="mobileMenuToggle()" alt="x">
                 <a class="link-text-navbar" href="index.html">Sākums</a>
                 <a class="link-text-navbar" href="daily-travel.html">Ikdienas Ceļš</a>
                 <a class="link-text-navbar" href="trains.html">Vilcieni</a>
                 <a class="link-text-navbar current-page-navbar-link" href="#">Pieturvietas</a>
-                <div class="theme-navbar">
+                <div class="theme-navbar" onClick="themeSwitch()">
                     <div class="theme-slider">
                         <p class="slider-text">Tumšs</p>
                     </div>
@@ -32,7 +32,7 @@
         </div>
         <!-- Page content -->
         <div class="page-content">
-            <div class="intro-container">
+            <div class="intro-container lighter-bg">
                 <div class="content-box-regular">
                     <div class="content-text">
                         <h1 class="heading-1">Pieturvietas</h1>
@@ -54,11 +54,11 @@
                     </div>
                 </div>
             </div>
-            <div class="station-list-container">
+            <div class="station-list-container darker-bg">
                 <div class="content-box-regular">
                     <h1 class="heading-1">Staciju saraksts</h1>
                     <div class="stations-container">
-                        <a class="image-link">
+                        <a class="image-link" href="Stations/station-tukums-ii.html">
                             <div class="link-container">
                                 <div class="link-image-container">
                                     <img class="image" src="Images/Stations/Tukums-II/20240327_093859.jpg" alt="">
@@ -74,10 +74,10 @@
                         </div>
                     </div>
                     <div class="stations-container">
-                        <a class="image-link">
+                        <a class="image-link" href="Stations/station-tukums-i.html">
                             <div class="link-container">
                                 <div class="link-image-container">
-                                    <img class="image" src="Images/Stations/" alt="">
+                                    <img class="image" src="Images/Stations/Tukums-I/20240517_175637.jpg" alt="">
                                 </div>
                                 <div class="station-name-container">
                                     <p class="station-link-text">Tukums i</p>
@@ -90,10 +90,10 @@
                         </div>
                     </div>
                     <div class="stations-container">
-                        <a class="image-link">
+                        <a class="image-link" href="Stations/station-milzkalne.html">
                             <div class="link-container">
                                 <div class="link-image-container">
-                                    <img class="image" src="Images/Stations/" alt="">
+                                    <img class="image" src="Images/Stations/Milzkalne/20240327_095940.jpg" alt="">
                                 </div>
                                 <div class="station-name-container">
                                     <p class="station-link-text">Milzkalne</p>
@@ -106,10 +106,10 @@
                         </div>
                     </div>
                     <div class="stations-container">
-                        <a class="image-link">
+                        <a class="image-link" href="Stations/station-smarde.html">
                             <div class="link-container">
                                 <div class="link-image-container">
-                                    <img class="image" src="Images/Stations/" alt="">
+                                    <img class="image" src="Images/Stations/Smarde/20240417_133306.jpg" alt="">
                                 </div>
                                 <div class="station-name-container">
                                     <p class="station-link-text">Smārde</p>
@@ -122,10 +122,10 @@
                         </div>
                     </div>
                     <div class="stations-container">
-                        <a class="image-link">
+                        <a class="image-link" href="Stations/station-kemeri.html">
                             <div class="link-container">
                                 <div class="link-image-container">
-                                    <img class="image" src="Images/Stations/" alt="">
+                                    <img class="image" src="Images/Stations/Kemeri/20240327_105143.jpg" alt="">
                                 </div>
                                 <div class="station-name-container">
                                     <p class="station-link-text">Ķemeri</p>
@@ -138,10 +138,10 @@
                         </div>
                     </div>
                     <div class="stations-container">
-                        <a class="image-link">
+                        <a class="image-link" href="Stations/station-kudra.html">
                             <div class="link-container">
                                 <div class="link-image-container">
-                                    <img class="image" src="Images/Stations/" alt="">
+                                    <img class="image" src="Images/Stations/Kudra/20240327_110301.jpg" alt="">
                                 </div>
                                 <div class="station-name-container">
                                     <p class="station-link-text">Kūdra</p>
@@ -154,10 +154,10 @@
                         </div>
                     </div>
                     <div class="stations-container">
-                        <a class="image-link">
+                        <a class="image-link" href="Stations/station-sloka.html">
                             <div class="link-container">
                                 <div class="link-image-container">
-                                    <img class="image" src="Images/Stations/" alt="">
+                                    <img class="image" src="Images/Stations/Sloka/20240327_111942.jpg" alt="">
                                 </div>
                                 <div class="station-name-container">
                                     <p class="station-link-text">Sloka</p>
@@ -170,10 +170,10 @@
                         </div>
                     </div>
                     <div class="stations-container">
-                        <a class="image-link">
+                        <a class="image-link" href="Stations/station-vaivari.html">
                             <div class="link-container">
                                 <div class="link-image-container">
-                                    <img class="image" src="Images/Stations/" alt="">
+                                    <img class="image" src="Images/Stations/Vaivari/20240327_115205.jpg" alt="">
                                 </div>
                                 <div class="station-name-container">
                                     <p class="station-link-text">Vaivari</p>
@@ -186,10 +186,10 @@
                         </div>
                     </div>
                     <div class="stations-container">
-                        <a class="image-link">
+                        <a class="image-link" href="Stations/station-asari.html">
                             <div class="link-container">
                                 <div class="link-image-container">
-                                    <img class="image" src="Images/Stations/" alt="">
+                                    <img class="image" src="Images/Stations/Asari/20240327_120129.jpg" alt="">
                                 </div>
                                 <div class="station-name-container">
                                     <p class="station-link-text">Asari</p>
@@ -202,10 +202,10 @@
                         </div>
                     </div>
                     <div class="stations-container">
-                        <a class="image-link">
+                        <a class="image-link" href="Stations/station-melluzi.html">
                             <div class="link-container">
                                 <div class="link-image-container">
-                                    <img class="image" src="Images/Stations/" alt="">
+                                    <img class="image" src="Images/Stations/Melluzi/20240327_121253.jpg" alt="">
                                 </div>
                                 <div class="station-name-container">
                                     <p class="station-link-text">Melluži</p>
@@ -218,10 +218,10 @@
                         </div>
                     </div>
                     <div class="stations-container">
-                        <a class="image-link">
+                        <a class="image-link" href="Stations/station-pumpuri.html">
                             <div class="link-container">
                                 <div class="link-image-container">
-                                    <img class="image" src="Images/Stations/" alt="">
+                                    <img class="image" src="Images/Stations/Pumpuri/20240327_122530.jpg" alt="">
                                 </div>
                                 <div class="station-name-container">
                                     <p class="station-link-text">Pumpuri</p>
@@ -234,10 +234,10 @@
                         </div>
                     </div>
                     <div class="stations-container">
-                        <a class="image-link">
+                        <a class="image-link" href="Stations/station-jaundubulti.html">
                             <div class="link-container">
                                 <div class="link-image-container">
-                                    <img class="image" src="Images/Stations/" alt="">
+                                    <img class="image" src="Images/Stations/Jaundubulti/20240327_124246.jpg" alt="">
                                 </div>
                                 <div class="station-name-container">
                                     <p class="station-link-text"> Jaundubulti</p>
@@ -250,10 +250,10 @@
                         </div>
                     </div>
                     <div class="stations-container">
-                        <a class="image-link">
+                        <a class="image-link" href="Stations/station-dubulti.html">
                             <div class="link-container">
                                 <div class="link-image-container">
-                                    <img class="image" src="Images/Stations/" alt="">
+                                    <img class="image" src="Images/Stations/Dubulti/20240327_125503.jpg" alt="">
                                 </div>
                                 <div class="station-name-container">
                                     <p class="station-link-text">Dubulti</p>
@@ -266,10 +266,10 @@
                         </div>
                     </div>
                     <div class="stations-container">
-                        <a class="image-link">
+                        <a class="image-link" href="Stations/station-majori.html">
                             <div class="link-container">
                                 <div class="link-image-container">
-                                    <img class="image" src="Images/Stations/" alt="">
+                                    <img class="image" src="Images/Stations/Majori/20240327_131652.jpg" alt="">
                                 </div>
                                 <div class="station-name-container">
                                     <p class="station-link-text">Majori</p>
@@ -282,10 +282,10 @@
                         </div>
                     </div>
                     <div class="stations-container">
-                        <a class="image-link">
+                        <a class="image-link" href="Stations/station-dzintari.html">
                             <div class="link-container">
                                 <div class="link-image-container">
-                                    <img class="image" src="Images/Stations/" alt="">
+                                    <img class="image" src="Images/Stations/Dzintari/20240327_134114.jpg" alt="">
                                 </div>
                                 <div class="station-name-container">
                                     <p class="station-link-text">Dzintari</p>
@@ -299,10 +299,10 @@
                     </div>
 
                     <div class="stations-container">
-                        <a class="image-link">
+                        <a class="image-link" href="Stations/station-bulduri.html">
                             <div class="link-container">
                                 <div class="link-image-container">
-                                    <img class="image" src="Images/Stations/" alt="">
+                                    <img class="image" src="Images/Stations/Bulduri/20240327_135324(0).jpg" alt="">
                                 </div>
                                 <div class="station-name-container">
                                     <p class="station-link-text">Bulduri</p>
@@ -315,10 +315,10 @@
                         </div>
                     </div>
                     <div class="stations-container">
-                        <a class="image-link">
+                        <a class="image-link" href="Stations/station-lielupe.html">
                             <div class="link-container">
                                 <div class="link-image-container">
-                                    <img class="image" src="Images/Stations/" alt="">
+                                    <img class="image" src="Images/Stations/Lielupe/20240327_140331.jpg" alt="">
                                 </div>
                                 <div class="station-name-container">
                                     <p class="station-link-text">Lielupe</p>
@@ -331,10 +331,10 @@
                         </div>
                     </div>
                     <div class="stations-container">
-                        <a class="image-link">
+                        <a class="image-link" href="Stations/station-priedaine.html">
                             <div class="link-container">
                                 <div class="link-image-container">
-                                    <img class="image" src="Images/Stations/" alt="">
+                                    <img class="image" src="Images/Stations/Priedaine/20240327_142635.jpg" alt="">
                                 </div>
                                 <div class="station-name-container">
                                     <p class="station-link-text"> Priedaine</p>
@@ -347,10 +347,10 @@
                         </div>
                     </div>
                     <div class="stations-container">
-                        <a class="image-link">
+                        <a class="image-link" href="Stations/station-babite.html">
                             <div class="link-container">
                                 <div class="link-image-container">
-                                    <img class="image" src="Images/Stations/" alt="">
+                                    <img class="image" src="Images/Stations/Babite/20240327_144153.jpg" alt="">
                                 </div>
                                 <div class="station-name-container">
                                     <p class="station-link-text">Babīte</p>
@@ -363,10 +363,10 @@
                         </div>
                     </div>
                     <div class="stations-container">
-                        <a class="image-link">
+                        <a class="image-link" href="Stations/station-imanta.html">
                             <div class="link-container">
                                 <div class="link-image-container">
-                                    <img class="image" src="Images/Stations/" alt="">
+                                    <img class="image" src="Images/Stations/Imanta/20240327_145405.jpg" alt="">
                                 </div>
                                 <div class="station-name-container">
                                     <p class="station-link-text">Imanta</p>
@@ -379,10 +379,10 @@
                         </div>
                     </div>
                     <div class="stations-container">
-                        <a class="image-link">
+                        <a class="image-link" href="Stations/station-zolitude.html">
                             <div class="link-container">
                                 <div class="link-image-container">
-                                    <img class="image" src="Images/Stations/" alt="">
+                                    <img class="image" src="Images/Stations/Zolitude/20240327_150740.jpg" alt="">
                                 </div>
                                 <div class="station-name-container">
                                     <p class="station-link-text">Zolitūde</p>
@@ -395,10 +395,10 @@
                         </div>
                     </div>
                     <div class="stations-container">
-                        <a class="image-link">
+                        <a class="image-link" href="Stations/station-depo.html">
                             <div class="link-container">
                                 <div class="link-image-container">
-                                    <img class="image" src="Images/Stations/" alt="">
+                                    <img class="image" src="Images/Stations/Depo/20240417_142840.jpg" alt="">
                                 </div>
                                 <div class="station-name-container">
                                     <p class="station-link-text">Depo</p>
@@ -411,10 +411,10 @@
                         </div>
                     </div>
                     <div class="stations-container">
-                        <a class="image-link">
+                        <a class="image-link" href="Stations/station-zasulauks.html">
                             <div class="link-container">
                                 <div class="link-image-container">
-                                    <img class="image" src="Images/Stations/" alt="">
+                                    <img class="image" src="Images/Stations/Zasulauks/20240327_154910.jpg" alt="">
                                 </div>
                                 <div class="station-name-container">
                                     <p class="station-link-text">Zasulauks</p>
@@ -427,10 +427,10 @@
                         </div>
                     </div>
                     <div class="stations-container">
-                        <a class="image-link">
+                        <a class="image-link" href="Stations/station-tornakalns.html">
                             <div class="link-container">
                                 <div class="link-image-container">
-                                    <img class="image" src="Images/Stations/" alt="">
+                                    <img class="image" src="Images/Stations/Tornakalns/20240527_134652.jpg" alt="">
                                 </div>
                                 <div class="station-name-container">
                                     <p class="station-link-text">Torņakalns</p>
@@ -443,10 +443,10 @@
                         </div>
                     </div>
                     <div class="stations-container">
-                        <a class="image-link">
+                        <a class="image-link" href="Stations/station-riga.html">
                             <div class="link-container">
                                 <div class="link-image-container">
-                                    <img class="image" src="Images/Stations/" alt="">
+                                    <img class="image" src="Images/Stations/Riga/20240213_124948.jpg" alt="">
                                 </div>
                                 <div class="station-name-container">
                                     <p class="station-link-text">Rīga</p>
@@ -460,7 +460,7 @@
         <!-- Footer -->
         <div class="footer">
             <div>
-                <img class="logo-footer" src="Images/logo-white.svg" alt="">
+                <img class="logo-footer" src="Images/logo-white.svg" alt="Vārds Uzvārds">
             </div>
             <div class="info-footer">
                 <p class="info-footer-title">
@@ -485,5 +485,7 @@
                 </p>
             </div>
         </div>
+        <!-- JS script file for functionality -->
+        <script src="script.js"></script>
     </body>
 </html>

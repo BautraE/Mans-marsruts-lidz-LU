@@ -3,27 +3,27 @@
     <head>
         <title>Welcome!</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="commonStyles.css" type="text/css" rel="stylesheet">
+        <link href="common-styles.css" type="text/css" rel="stylesheet">
         <link href="trains.css" type="text/css" rel="stylesheet">
     </head>
     <body>
         <!-- Navigation bar -->
         <div class="navbar">
             <div class="logo-navbar">
-                <img class="logo-navbar-image" src="Images/logo-black.svg" alt="">
+                <img class="logo-navbar-image" src="Images/logo-black.svg" alt="Vārds Uzvārds">
             </div>
-            <div class="mobile-menu">
+            <div class="mobile-menu" onClick="mobileMenuToggle()">
                 <hr class="mobile-menu-line">
                 <hr class="mobile-menu-line">
                 <hr class="mobile-menu-line">
             </div>
             <div class="links-navbar">
-                <img class="close-menu-icon" src="Images/close-menu-icon.svg" alt="">
+                <img class="close-menu-icon" src="Images/close-menu-icon.svg" onClick="mobileMenuToggle()" alt="x">
                 <a class="link-text-navbar" href="index.html">Sākums</a>
                 <a class="link-text-navbar" href="daily-travel.html">Ikdienas Ceļš</a>
-                <a class="link-text-navbar current-page-navbar-link" href="trains.html">Vilcieni</a>
-                <a class="link-text-navbar" href="#">Pieturvietas</a>
-                <div class="theme-navbar">
+                <a class="link-text-navbar current-page-navbar-link" href="#">Vilcieni</a>
+                <a class="link-text-navbar" href="stations-list.html">Pieturvietas</a>
+                <div class="theme-navbar" onClick="themeSwitch()">
                     <div class="theme-slider">
                         <p class="slider-text">Tumšs</p>
                     </div>
@@ -32,19 +32,19 @@
         </div>
         <!-- Page content -->
         <div class="page-content">
-            <div class="trains-page-container">
+            <div class="trains-page-container darker-bg">
                 <div class="content-box-regular">
                     <h1 class="heading-1">Vilcieni</h1>
                     <div class="large-paragraph">
                         <div class="paragraph-navigation">
-                            <a class="paragraph-navigation-links" href="">Vilcienu daudzveidība</a>
-                            <a class="paragraph-navigation-links" href="">Jaunie vilcienu</a>
-                            <a class="paragraph-navigation-links" href="">Vecie vilcieni</a>
-                            <a class="paragraph-navigation-links" href="">Sēdekļu daudzveidība</a>
+                            <a class="paragraph-navigation-links" href="#train-variety-content">Vilcienu daudzveidība</a>
+                            <a class="paragraph-navigation-links" href="#new-trains-content">Jaunie vilcienu</a>
+                            <a class="paragraph-navigation-links" href="#old-trains-content">Vecie vilcieni</a>
+                            <a class="paragraph-navigation-links" href="#seat-variety-content">Sēdekļu daudzveidība</a>
                         </div>
                         <div class="yellow-line"></div>
                         <div class="large-paragraph-content">
-                            <div class="train-variety-content">
+                            <div id="train-variety-content" class="train-variety-content">
                                 <h2 class="heading-2">Vilcienu daudzveidība</h2>
                                 <p class="paragraph">Katrs brauciens uz universitāti iekļauj sava veida minēšanu par to, kāds vilciens tiks, proti, vecais vai jaunais, kā arī kāds vagons patrāpīsies, ja gadījumā pienāks vecais. Tā kā uz Tukumu brauc tikai elektrovilcieni, diemžēl, visus vilcienus, kuri kursē Latvijā, nav iespējams sastapt – it īpaši sarkanos “luksusa” dīzeļvilcienus.</p>
                                 <div class="paragraph-image-container">
@@ -53,7 +53,7 @@
                                 <p class="under-image-text">!!Apraksts zem teksta</p>
                                 <div class="line-after-content"></div>
                             </div>
-                            <div class="new-trains-content">
+                            <div id="new-trains-content" class="new-trains-content">
                                 <h2 class="heading-2">Jaunie vilcieni</h2>
                                 <p class="paragraph">Ar komfortu un lielākām iespējām ierīkotie elektrovilcieni no uzņēmuma “Škoda” ir krietns solis nākotnē, salīdzinot ar to, kas iepriekš bijis. Ierīkoti ar ērtiem un augstiem sēdekļiem, kontaktligzdām ierīču uzlādei, gaisa kondicionieri temperatūras regulēšanai un pat tualeti, šis ir kā piepildījies sapnis.</p>
                                 <div class="paragraph-image-container">
@@ -67,7 +67,7 @@
                                 <p class="under-image-text">!!Apraksts zem teksta</p>
                                 <div class="line-after-content"></div>
                             </div>
-                            <div class="old-trains-content">
+                            <div id="old-trains-content" class="old-trains-content">
                                 <h2 class="heading-2">Vecie vilcieni</h2>
                                 <p class="paragraph">Lai arī vecajos pasažieru vilcienos trūkst jaunieviestās inovācijas, kas nodrošina ērtāku braucienu, tie ir kalpojuši ļoti ilgu laiku un ir veiksmīgi pildījuši savus mērķus, proti, palīdzot novest mani no punkta A līdz B, kā arī tie sniedz ieskatu vēsturē un pagājušajos laikos, kurus pats neesmu piedzīvojis.</p>
                                 <div class="paragraph-image-container">
@@ -80,7 +80,7 @@
                                 <p class="under-image-text">!!Apraksts zem teksta</p>
                                 <div class="line-after-content"></div>
                             </div>
-                            <div class="seat-variety-content">
+                            <div id="seat-variety-content" class="seat-variety-content">
                                 <h2 class="heading-2">Sēdekļu daudzveidība</h2>
                                 <p class="paragraph">No ādas līdz audumam, pat arī neizprotamām sēdekļu formām saistībā ar komfortu, vieta, kur katru reizi tieku sēdēt, līdzinās loterijai, jo rezultātu uzzinu, tikai tad, kad to saņemu, proti, apsēžos. Ja pat līdzīgi, tie var pat atšķirties ar to, cik mīksti tie ir.</p>
                                 <p class="paragraph">Auduma sēdekļi ir tā variācija, kura tiek visbiežāk vecajos vilcienos. Interesantā kārtā, tiem ir arī vairāki paveidi, proti, ir augstie un zemie varianti, kā arī citiem mēdz būt īpatnība, kas sagādā man neizpratni par tā nozīmi - neliels “paugurs” katram no sēdekļiem.</p>
@@ -107,7 +107,7 @@
         <!-- Footer -->
         <div class="footer">
             <div>
-                <img class="logo-footer" src="Images/logo-white.svg" alt="">
+                <img class="logo-footer" src="Images/logo-white.svg" alt="Vārds Uzvārds">
             </div>
             <div class="info-footer">
                 <p class="info-footer-title">
@@ -132,5 +132,8 @@
                 </p>
             </div>
         </div>
+        <!-- JS script file for functionality -->
+        <script src="script.js"></script>
+        <script src="large-paragraph-navigation.js"></script>
     </body>
 </html>
